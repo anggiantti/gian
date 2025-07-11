@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alex Johnson - Projects</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .glass-nav {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(255,255,255,0.18);
+      padding: 0.75rem 2rem;
+      display: flex;
+      justify-content: center;
+      z-index: 100;
+    }
+    .glass-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    .glass-nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    .glass-nav a:hover {
+      color: #66a6ff;
+    }
+    @media (max-width: 600px) {
+      .glass-nav ul {
+        gap: 1rem;
+        font-size: 0.9rem;
+      }
+    }
+    main {
+      flex: 1;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.25);
+    }
+    .project {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    }
+    .project img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .project h2 {
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+    .project p {
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="glass-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Projects</h1>
+
+    <div class="project">
+      <img src="https://via.placeholder.com/800x400?text=Project+1+Screenshot" alt="Project 1 Screenshot" />
+      <h2>Portfolio Redesign</h2>
+      <p>Redesigned a personal portfolio website with a modern glassmorphism theme, focusing on responsiveness and UX optimization.</p>
+    </div>
+
+    <div class="project">
+      <img src="https://via.placeholder.com/800x400?text=Project+2+Screenshot" alt="Project 2 Screenshot" />
+      <h2>E-commerce Landing Page</h2>
+      <p>Developed a clean, minimalist landing page for an online store that increased user engagement by 30% with interactive elements.</p>
+    </div>
+
+    <div class="project">
+      <img src="https://via.placeholder.com/800x400?text=Project+3+Screenshot" alt="Project 3 Screenshot" />
+      <h2>Blog Platform UI</h2>
+      <p>Created a user-friendly UI for a blogging platform using smooth microanimations and a dark mode option for better readability.</p>
+    </div>
+
+  </main>
+
+</body>
+</html>
